@@ -8,50 +8,58 @@
     <title>Document</title>
 </head>
 <body>
+    <header class="header">
+        <img src="img/bikcraft.svg"/>
 
-    <img src="img/bikcraft.svg"/>
+        <nav aria-label="primary">
+            <ul class="menu">
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>
+                <li><a href="">Item</a></li>  
+            </ul>
+        </nav>
+    </header>
 
-    <div class="menu">
-        <a href="">Item</a>
-        <a href="">Item</a>
-        <a href="">Item</a>
-        <a href="">Item</a>
-    </div>
+    <main>
+        <article class="container">
 
-    <div class="container">
-        <div class="introducao">
-            <span class="detalhe"></span>
-            <h1>TITULO</h1>
-            <p>paragrafoparagrafoparagrafoparagrafoparagrafo</p>
-            <a href="" class="botao">Ver mais.</a>
-            
-        </div>
-        
-        <img src="img/bicicleta.jpg">
-
-        <h2 class="subtitulo">BICLETA ETA ETA</h1>
-        
-        <div class="vantagem">
-            <div class="vantagem-item">
-                <img src="img/eletrica.svg">
-                <h3>Item 1</h3>
-                <p>descrição 1</p>
-            </div>
-            <div class="vantagem-item">
-                <img src="img/eletrica.svg">
-                <h3>Item 2</h3>
-                <p>descrição 2</p>
-            </div>
-            <div class="vantagem-item">
-                <img src="img/eletrica.svg">
-                <h3>Item 3</h3>
-                <p>descrição</p>
+            <div class="introducao" aria-labelledby="label-introducao">
+                <h1 id="label-introducao">TITULO</h1>
+                <p>paragrafoparagrafoparagrafoparagrafoparagrafo</p>
+                <a href="" class="botao">Ver mais.</a>
             </div>
             
-        </div>
-    </div>
+            <img src="img/bicicleta.jpg">
 
-    <div class="footer">@Mismetti 2022</div>
+        </article>  
+
+        <article class="container" aria-labelledby="label-vantagem">
+
+            <h2 class="subtitulo" id="label-vantagem">Bicicleta</h1>
+            
+            <ul class="vantagem">
+                <li class="vantagem-item">
+                    <img src="img/eletrica.svg">
+                    <h3>Item 1</h3>
+                    <p>descrição 1</p>
+                </li>
+                <li class="vantagem-item">
+                    <img src="img/eletrica.svg">
+                    <h3>Item 2</h3>
+                    <p>descrição 2</p>
+                </li>
+                <li class="vantagem-item">
+                    <img src="img/eletrica.svg">
+                    <h3>Item 3</h3>
+                    <p>descrição</p>
+                </li>
+            </ul>
+
+        </article>
+    </main>
+
+    <footer class="footer">@Mismetti 2022</footer>
 
 </body>
 </html>
